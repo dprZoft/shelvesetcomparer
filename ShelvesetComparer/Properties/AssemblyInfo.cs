@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("ShelvesetComparer")]
 [assembly: AssemblyDescription("Visual Studio extension for comparing shelvesets.")]
-[assembly: AssemblyCompany("Hamid Shahid and dprZoft")]
+[assembly: AssemblyCompany("dprZoft and Hamid Shahid")]
 [assembly: AssemblyProduct("ShelvesetComparer")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
@@ -23,5 +23,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Release")]
 #endif
 
-[assembly: AssemblyVersion("1.0.4.22")]
-[assembly: AssemblyFileVersion("1.0.4.22")]
+[assembly: AssemblyVersion("1.4.1.22")]
+[assembly: AssemblyFileVersion("1.4.1.22")]
