@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="c3b55d75-8ea6-3936-a8853-1d105zd38z19.VS2022" Version="1.5.0.22" Language="en-US" Publisher="dprZoft" />
-        <DisplayName>DiffFinder for VS2022</DisplayName>
+        <Identity Id="c3b55d75-8ea6-3936-a8853-1d105zd38z19.VS2026" Version="1.5.0.26" Language="en-US" Publisher="dprZoft" />
+        <DisplayName>DiffFinder for VS2026</DisplayName>
         <Description xml:space="preserve">The extension allows you to compare files in two shelvesets or one shelveset with pending changes.
 Based on https://github.com/rajeevboobna/CompareShelvesets by Rajeev Boobna and https://github.com/hamidshahid/shelvesetcomparer by Hamid Shahid.
 Improved in https://github.com/dprZoft/shelvesetcomparer</Description>
@@ -10,10 +10,10 @@ Improved in https://github.com/dprZoft/shelvesetcomparer</Description>
         <License>Resources\License.rtf</License>
         <Icon>Resources\Package.ico</Icon>
         <PreviewImage>Resources\PreviewImage.png</PreviewImage>
-        <Tags>Shelveset, Comparison, Team Explorer, VS2022, 2022</Tags>
+        <Tags>Shelveset, Comparison, Team Explorer, VS2026, 2026</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.IntegratedShell">
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
@@ -25,6 +25,6 @@ Improved in https://github.com/dprZoft/shelvesetcomparer</Description>
         <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[18.0,19.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
