@@ -10,10 +10,10 @@ Improved in https://github.com/dprZoft/shelvesetcomparer</Description>
         <License>Resources\License.rtf</License>
         <Icon>Resources\Package.ico</Icon>
         <PreviewImage>Resources\PreviewImage.png</PreviewImage>
-        <Tags>Shelveset, Comparison, Team Explorer, VS2026, 2026</Tags>
+        <Tags>VS2026, 2026, Shelveset, Comparison, Team Explorer, Diff, Difference, Differences, Compare, Review, Files, Items, TF, TFS, Team Foundation, Team Foundation Server, TFVC, Pending Changes, Pending, Changes</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.0,)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
