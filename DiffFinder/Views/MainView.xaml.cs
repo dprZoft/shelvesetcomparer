@@ -106,11 +106,12 @@ namespace DiffFinder
             else
             {
                 // So there is a tool configured. Let's use it
-                // $3: Base file, %4: Merged file, %5: Diff command-line options, %6: original file label, %7: Modified file label, %8,9: base file and merged file label
-                diffToolCommandArguments = diffToolCommandArguments.Replace("%1", firstFileName)
-                    .Replace("%2", secondFileName)
-                    .Replace("%6", firstDisplayName)
-                    .Replace("%7", secondDisplayName);
+                diffToolCommandArguments = DiffToolArgumentBuilder.Build(
+                    diffToolCommandArguments,
+                    firstFileName,
+                    secondFileName,
+                    firstDisplayName,
+                    secondDisplayName);
                 var startInfo = new ProcessStartInfo()
                 {
                     Arguments = diffToolCommandArguments,
