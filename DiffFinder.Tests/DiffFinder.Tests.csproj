@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>DiffFinder.Tests</RootNamespace>
+    <AssemblyName>DiffFinder.Tests</AssemblyName>
+    <!-- referencing the VSIX project drags in the Visual Studio SDK, whose assembly versions conflict with the ones shipping in the IDE -->
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3277</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.6.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiffFinder\DiffFinder.csproj" />
+  </ItemGroup>
+
+</Project>

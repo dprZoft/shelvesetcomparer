@@ -84,6 +84,7 @@
     <Compile Include="ViewExtensions\SortGlyphAdorner.cs" />
     <Compile Include="ViewModel\FileComparisonViewModel.cs" />
     <Compile Include="ViewModel\ShelvesetComparerViewModel.cs" />
+    <Compile Include="Views\DiffToolArgumentBuilder.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
