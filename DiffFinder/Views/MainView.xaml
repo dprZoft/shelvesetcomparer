@@ -75,18 +75,6 @@
     </Grid>
 
     <ListView Grid.Row="2" HorizontalAlignment="Stretch" Name="ComparisonFiles" ItemsSource="{Binding ComparisonModel.Files, ElementName=DifFinder}" MouseDoubleClick="ComparisonFiles_MouseDoubleClick" KeyUp="ComparisonFiles_KeyUp" SelectionMode="Single">
-      <ListView.Resources>
-        <Style x:Key="backgroundSelected" TargetType="{x:Type ListViewItem}">
-          <Style.Triggers>
-            <Trigger Property="IsSelected" Value="true">
-              <Setter Property="Background" Value="LightYellow" />
-            </Trigger>
-            <Trigger Property="IsSelected" Value="false">
-              <Setter Property="Background" Value="White" />
-            </Trigger>            
-          </Style.Triggers>
-        </Style>
-      </ListView.Resources>
       <ListView.View>
         <GridView>
           <GridViewColumn Header="First Shelveset" Width="Auto">
