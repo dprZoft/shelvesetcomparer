@@ -79,9 +79,11 @@
     <Compile Include="ViewModel\PendingChangeFacadeStub.cs" />
     <Compile Include="ViewModel\ShelvesetViewModel.cs" />
     <Compile Include="TeamExplorer\ShelvesetsContext.cs" />
+    <Compile Include="ViewExtensions\ComparisonColors.cs" />
     <Compile Include="ViewExtensions\UserControlMaxHeightMultiValueConverter.cs" />
     <Compile Include="ViewExtensions\GridViewSorter.cs" />
     <Compile Include="ViewExtensions\SortGlyphAdorner.cs" />
+    <Compile Include="ViewModel\FileComparisonState.cs" />
     <Compile Include="ViewModel\FileComparisonViewModel.cs" />
     <Compile Include="ViewModel\ShelvesetComparerViewModel.cs" />
     <Compile Include="Views\MainView.xaml.cs">

@@ -25,6 +25,11 @@
   <SolidColorBrush x:Key="ItemHoverBorderBrushKey" Color="{Binding Source={x:Static mtcw:TeamFoundationColors.Instance},Path=ItemHoverBorderColor,Mode=OneWay}" />
   <SolidColorBrush x:Key="SubduedTextBrushKey" Color="{Binding Source={x:Static mtcw:TeamFoundationColors.Instance},Path=SubduedTextColor,Mode=OneWay}" />
 
+  <!-- Comparison Grid Text Colors -->
+  <SolidColorBrush x:Key="MatchingFilesTextBrushKey" Color="{Binding Source={x:Static extensions:ComparisonColors.Instance},Path=MatchingFilesColor,Mode=OneWay}" />
+  <SolidColorBrush x:Key="DifferentFilesTextBrushKey" Color="{Binding Source={x:Static extensions:ComparisonColors.Instance},Path=DifferentFilesColor,Mode=OneWay}" />
+  <SolidColorBrush x:Key="MissingFileTextBrushKey" Color="{Binding Source={x:Static extensions:ComparisonColors.Instance},Path=MissingFileColor,Mode=OneWay}" />
+
   <Style x:Key="TextBlockStyle"  TargetType="{x:Type TextBlock}">
     <Setter Property="Control.Background" Value="{StaticResource ItemBrushKey}" />
     <Setter Property="Control.Foreground" Value="{StaticResource ItemTextBrushKey}" />
