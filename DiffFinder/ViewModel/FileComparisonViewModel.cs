@@ -53,9 +53,9 @@ namespace DiffFinder
         }
 
         /// <summary>
-        /// Gets or sets the Color of text.
+        /// Gets or sets the comparison state of the file, which drives the text color.
         /// </summary>
-        public string Color { get; set; }
+        public FileComparisonState State { get; set; }
 
         /// <summary>
         /// Returns the full file path of the pending change file.
