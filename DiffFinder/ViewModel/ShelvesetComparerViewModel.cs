@@ -21,21 +21,6 @@ namespace DiffFinder
     public class ShelvesetComparerViewModel : INotifyPropertyChanged
     {
         /// <summary>
-        /// The color used when the two files match
-        /// </summary>
-        private const string ColorMatchingFiles = "black";
-
-        /// <summary>
-        /// The color used when the two files are different
-        /// </summary>
-        private const string ColorDifferentFiles = "red";
-
-        /// <summary>
-        /// The color used when the two files do not have a corresponding match in the other shelveset.
-        /// </summary>
-        private const string ColorNoMatchingFile = "blue";
-
-        /// <summary>
         /// Static Instance Variable. A Singleton instance of view model is used to pass information between tool explorer window and main view.
         /// </summary>
         private static ShelvesetComparerViewModel instance = null;
@@ -342,7 +327,7 @@ namespace DiffFinder
                     SecondFile = matchingFile,
                     FirstShelveName = firstShelvesetName,
                     SecondShelveName = SecondShelvesetName,
-                    Color = sameContent ? ColorMatchingFiles : (matchingFile != null) ? ColorDifferentFiles : ColorNoMatchingFile
+                    State = sameContent ? FileComparisonState.Matching : (matchingFile != null) ? FileComparisonState.Different : FileComparisonState.MissingInOtherShelveset
                 };
 
                 orderedCollection.Add(pendingChange.LocalOrServerFolder + "/" + pendingChange.FileName, comparisonItem);
@@ -368,7 +353,7 @@ namespace DiffFinder
                         {
                             SecondFile = pendingChange,
                             SecondShelveName = SecondShelvesetName,
-                            Color = ColorNoMatchingFile
+                            State = FileComparisonState.MissingInOtherShelveset
                         };
 
                         orderedCollection.Add(pendingChange.LocalOrServerFolder + "/" + pendingChange.FileName, comparisonItem);
